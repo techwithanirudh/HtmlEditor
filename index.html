@@ -211,11 +211,7 @@ scriptEls.forEach((element) => {
 
     var code = localStorage.getItem(src);
 
-    if (code) {
-      eval(code);
-    } else {
-      console.error('404: Script' + src + 'not found');
-    }
+    eval(code);
   }
 });
 
